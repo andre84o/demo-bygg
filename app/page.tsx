@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -334,16 +336,13 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-amber-500/10 rounded-3xl"></div>
-              <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-amber-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                  </div>
-                  <p className="text-slate-500 text-lg">Projektbild</p>
-                  <p className="text-slate-400 text-sm">Före & efter renovering</p>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden h-96">
+                <Image
+                  src="/immo-renovation-UqNEbyRQ660-unsplash.jpg"
+                  alt="Renovering - före och efter"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -362,14 +361,13 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Project Card 1 */}
             <div className="group relative overflow-hidden rounded-2xl bg-slate-800 aspect-[4/3]">
+              <Image
+                src="/chastity-cortijo-80c0YaiSFk4-unsplash.jpg"
+                alt="Lyxigt badrum i Östermalm"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center">
-                  <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <span className="inline-block bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Badrum</span>
                 <h3 className="text-xl font-bold text-white mb-1">Lyxigt badrum i Östermalm</h3>
@@ -379,14 +377,13 @@ export default function Home() {
 
             {/* Project Card 2 */}
             <div className="group relative overflow-hidden rounded-2xl bg-slate-800 aspect-[4/3]">
+              <Image
+                src="/milivoj-kuhar-Te48TPzdcU8-unsplash.jpg"
+                alt="Modernt kök i Södermalm"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center">
-                  <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <span className="inline-block bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Kök</span>
                 <h3 className="text-xl font-bold text-white mb-1">Modernt kök i Södermalm</h3>
@@ -396,14 +393,13 @@ export default function Home() {
 
             {/* Project Card 3 */}
             <div className="group relative overflow-hidden rounded-2xl bg-slate-800 aspect-[4/3]">
+              <Image
+                src="/steffen-lemmerzahl-XXanshmt5so-unsplash.jpg"
+                alt="Sekelskiftesvåning i Vasastan"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center">
-                  <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <span className="inline-block bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Totalrenovering</span>
                 <h3 className="text-xl font-bold text-white mb-1">Sekelskiftesvåning i Vasastan</h3>
@@ -413,14 +409,13 @@ export default function Home() {
 
             {/* Project Card 4 */}
             <div className="group relative overflow-hidden rounded-2xl bg-slate-800 aspect-[4/3]">
+              <Image
+                src="/nolan-issac-K5sjajgbTFw-unsplash.jpg"
+                alt="Ekparkett i Bromma"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center">
-                  <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <span className="inline-block bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Golv</span>
                 <h3 className="text-xl font-bold text-white mb-1">Ekparkett i Bromma</h3>
@@ -430,14 +425,13 @@ export default function Home() {
 
             {/* Project Card 5 */}
             <div className="group relative overflow-hidden rounded-2xl bg-slate-800 aspect-[4/3]">
+              <Image
+                src="/steffen-lemmerzahl-yJpvGn5goGc-unsplash.jpg"
+                alt="Spa-badrum i Nacka"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center">
-                  <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <span className="inline-block bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Badrum</span>
                 <h3 className="text-xl font-bold text-white mb-1">Spa-badrum i Nacka</h3>
@@ -447,14 +441,13 @@ export default function Home() {
 
             {/* Project Card 6 */}
             <div className="group relative overflow-hidden rounded-2xl bg-slate-800 aspect-[4/3]">
+              <Image
+                src="/im3rd-media-FJZtZldA-uE-unsplash.jpg"
+                alt="Kontorsrenovering i City"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center">
-                  <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <span className="inline-block bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Kontor</span>
                 <h3 className="text-xl font-bold text-white mb-1">Kontorsrenovering i City</h3>
