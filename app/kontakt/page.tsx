@@ -51,7 +51,7 @@ export default function KontaktPage() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-500">E-post</p>
-                    <p className="text-lg font-semibold text-slate-800">info@byggproff.se</p>
+                    <p className="text-lg font-semibold text-slate-800">info@intenzze.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
